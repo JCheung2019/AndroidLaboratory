@@ -1,25 +1,17 @@
 package com.zjun.laboratory.template;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        initialize();
+    protected int getLayoutId() {
+        return R.layout.activity_main;
     }
 
-    /**
-     * 初始化
-     */
-    private void initialize() {
+    @Override
+    protected void onInitView() {
 
     }
 
